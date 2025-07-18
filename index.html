@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="./src/output.css" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-very-dark-blue-main-BG text-white font-Overpass h-screen grid place-content-center">
+  <main>
+    <div id="select" class="gradient-background w-[347px] rounded-2xl p-6 sm:w-[412px] sm:p-8">
+
+      <div class="bg-very-dark-blue-main-BG border w-10 h-10 grid place-content-center rounded-full mb-4">
+        <img src="./images/icon-star.svg" alt="icon-star.svg">
+      </div>
+
+      <h2 class="text-2xl mb-2 sm:text-[28px]">How did we do?</h2>
+      <p class="text-Grey-500 mb-6">Please let us know how we did with your support request. All feedback is appreciated 
+         to help us improve our offering!</p>
+
+     <div class="flex place-content-between mb-6">
+        <button class="circle">1</button>
+        <button class="circle">2</button>
+        <button class="circle">3</button>
+        <button class="circle">4</button>
+        <button class="circle">5</button>
+     </div>
+
+      <button id="submit-btn" class="bg-Orange-500 w-full rounded-[22px] h-[45px] uppercase text-very-dark-blue-card-BG font-bold text-[14px] tracking-widest hover:bg-white cursor-pointer">Submit</button>
+    </div>
+
+    <div id="thank-you" class="hidden gradient-background w-[347px] rounded-2xl p-6 sm:w-[412px]">
+      <div class="flex justify-center mb-6">
+        <img class="w-[144px]" src="./images/illustration-thank-you.svg" alt="illustration-thank-you.svg"> 
+      </div>
+
+      <div class="flex justify-center mb-6" >
+        <p class="bg-very-dark-blue-card-BG rounded-[22px] inline-block px-3 py-2 text-Orange-500 ">You selected <span id="score">4</span> out of 5</p>
+      </div>
+
+      <h2 class="text-center text-2xl mb-[10px]">Thank you !!</h2>
+
+      <p class="text-center text-color-Grey-500">We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </p>
+    </div>
+  </main>
+  <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../font/Overpass-VariableFont_wght.ttf") format("woff2");  
+}
+
+@theme {
+  --color-Orange-500: hsl(25, 97%, 53%);
+  --color-White: hsl(0, 100%, 100%);
+  --color-Grey-500: hsl(217, 12%, 63%);
+  --color-Grey-900: hsl(213, 19%, 18%);
+  --color-Grey-950: hsl(216, 12%, 8%);
+  --color-Font-size-paragraph: 15px;
+  --color-Weights: 400, 700;
+  --color-Soft-blue: hsl(215, 51%, 70%);
+  --color-Cyan:hsl(178, 100%, 50%);
+  --color-very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --color-very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --color-very-dark-blue-line: hsl(215, 32%, 27%);
+  --color-White: hsl(0, 0%, 100%);
+  --font-Overpass: Overpass;
+  --back-radial: radial-gradient(black 99% 00% at 50% 0%, hsl(215, 20% 17%), hsl(216, 24%, 12%) 100%);
+}
+
+@layer components {
+   .gradient-background {
+       background: radial-gradient(99% 0% at 50% 0%, 
+       hsl(215, 20% 17%), hsl(216, 24%, 12%) 100%);
+       /* background: radial-gradient(black 0%, transparent 20%, salmon 40%); */
+       /* background-color: bisque; */
+    }
+    .circle {
+        @apply bg-very-dark-blue-card-BG font-bold w-10 h-10 grid place-content-center rounded-full cursor-pointer
+         hover:bg-Orange-500 text-Grey-500 hover:text-very-dark-blue-card-BG;
+    }
+}
